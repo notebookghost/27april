@@ -39,6 +39,8 @@ public class SecondScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_screen);
 
+
+
         mSendOTPBtn = findViewById(R.id.send_codebtn);
         processText = findViewById(R.id.text_process);
         countryCodeEdit = findViewById(R.id.input_country_code);
@@ -51,7 +53,7 @@ public class SecondScreen extends AppCompatActivity {
             public void onClick(View v) {
                 String country_code = countryCodeEdit.getText().toString();
                 String phone = phonenumberEdit.getText().toString();
-                String phoneNumber = "+" + country_code + "" + phone;
+                String phoneNumber = "+91" + country_code + "" + phone;
                 if (!country_code.isEmpty()  || !phone.isEmpty()){
 
                     PhoneAuthOptions options = PhoneAuthOptions.newBuilder(auth)

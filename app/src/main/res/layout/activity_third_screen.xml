@@ -8,29 +8,60 @@
 
     <EditText
         android:id="@+id/verify_code_edit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="240dp"
+        android:layout_width="242dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="172dp"
         android:ems="10"
+        android:fontFamily="@font/exo_bold"
+        android:hint="           OTP"
         android:inputType="number"
-        android:hint="enter otp"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/verifycode_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/verifycode_btn"
-        android:layout_width="382dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginBottom="48dp"
+        android:layout_width="345dp"
+        android:layout_height="73dp"
+        android:fontFamily="@font/exo_bold"
         android:text="Verify"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="288dp"
+        android:layout_height="43dp"
+        android:fontFamily="@font/exo_bold"
+        android:text="Enter the 6 digit code"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/verify_code_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="397dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/exo_bold"
+        android:text="We have sent a OTP by SMS to your entered phone number.(Note:It may take upto 30 seconds to recieve the OTP)"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/verifycode_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verify_code_edit"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
