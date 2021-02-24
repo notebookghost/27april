@@ -21,6 +21,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
@@ -52,12 +53,14 @@ public class SecondScreen extends AppCompatActivity {
                 String phone = phonenumberEdit.getText().toString();
                 String phoneNumber = "+" + country_code + "" + phone;
                 if (!country_code.isEmpty()  || !phone.isEmpty()){
-                    PhoneAuthProvider.getInstance().verifyPhoneNumber(phoneNumber,60, TimeUnit.SECONDS,(Activity) TaskExecutors.MAIN_THREAD,mCallBacks);
 
-
-
-
-
+                    PhoneAuthOptions options = PhoneAuthOptions.newBuilder(auth)
+                            .setPhoneNumber(phoneNumber)
+                            .setTimeout(60L , TimeUnit.SECONDS)
+                            .setActivity(SecondScreen.this)
+                            .setCallbacks(mCallBacks)
+                            .build();
+                    PhoneAuthProvider.verifyPhoneNumber(options);
 
                 }else{
                     processText.setText("Please enter Country Code and Phone Number");
