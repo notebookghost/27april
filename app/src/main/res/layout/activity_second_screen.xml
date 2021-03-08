@@ -6,52 +6,141 @@
     android:layout_height="match_parent"
     tools:context=".SecondScreen">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="187dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editTextTextPersonName2"
+    <FrameLayout
+        android:id="@+id/number_outline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/input_phone"
+        android:layout_alignEnd="@+id/input_phone"
+        android:layout_alignRight="@+id/input_phone"
+        android:layout_alignBottom="@+id/input_phone"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="170dp"
-        android:layout_marginLeft="170dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/border"
+        android:visibility="visible">
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/input_country_code"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_codebtn"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toStartOf="@+id/input_phone"
+        android:layout_toLeftOf="@+id/input_phone"
+        android:clickable="false"
         android:ems="10"
-        android:fontFamily="@font/exo_bold"
-        android:hint="NAME"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448" />
+        android:fontFamily="@font/exo_2"
+
+        android:inputType="numberSigned"
+        android:textSize="19sp"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/email_outline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/editTextTextPersonName2"
+        android:layout_alignLeft="@+id/editTextTextPersonName2"
+        android:layout_alignTop="@+id/editTextTextPersonName2"
+        android:layout_alignEnd="@+id/editTextTextPersonName"
+        android:layout_alignRight="@+id/editTextTextPersonName"
+        android:layout_alignBottom="@+id/editTextTextPersonName2"
+        android:layout_marginStart="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/border"
+        android:visibility="visible">
+
+    </FrameLayout>
 
     <EditText
         android:id="@+id/input_phone"
-        android:layout_width="190dp"
+        android:layout_width="193dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/send_codebtn"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="90dp"
         android:ems="10"
-        android:fontFamily="@font/exo_bold"
+        android:fontFamily="@font/exo_2"
         android:hint="PHONE NUMBER"
-        android:textSize="19sp"
         android:inputType="phone"
+        android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.61" />
+
+    <FrameLayout
+        android:id="@+id/name_outline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/editTextTextPersonName"
+        android:layout_alignLeft="@+id/editTextTextPersonName"
+        android:layout_alignTop="@+id/editTextTextPersonName"
+        android:layout_alignEnd="@+id/editTextTextPersonName"
+        android:layout_alignRight="@+id/editTextTextPersonName"
+        android:layout_alignBottom="@+id/editTextTextPersonName"
+        android:layout_marginStart="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/border"
+        android:visibility="visible">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="357dp"
+        android:layout_marginBottom="336dp"
+        app:srcCompat="@drawable/india" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_phone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:fontFamily="@font/exo_2"
+        android:hint="EMAIL-ID"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/send_codebtn"
@@ -70,39 +159,27 @@
         android:layout_marginBottom="181dp"
         android:fontFamily="@font/exo_bold"
         android:text="Send OTP"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:backgroundTint="@color/green" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="354dp"
-        android:layout_height="162dp"
-        android:layout_above="@+id/editTextTextPersonName"
+        android:layout_width="317dp"
+        android:layout_height="154dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
         android:fontFamily="@font/exo_bold"
         android:text="New User? Register Here!"
-        android:textSize="48sp" />
-
-    <EditText
-        android:id="@+id/input_country_code"
-        android:layout_width="46dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/send_codebtn"
-        android:layout_marginEnd="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginBottom="39dp"
-        android:layout_toStartOf="@+id/input_phone"
-        android:layout_toLeftOf="@+id/input_phone"
-        android:ems="10"
-        android:fontFamily="@font/exo_bold"
-        android:inputType="numberSigned"
-        android:text="+91"
-        android:textSize="19sp" />
+        android:textColor="@color/grey"
+        android:textSize="36sp" />
 
     <TextView
         android:id="@+id/text_process"
@@ -120,30 +197,58 @@
         android:textSize="12sp"
         android:visibility="invisible" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="62dp"
-        android:layout_height="39dp"
-        android:layout_above="@+id/send_codebtn"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="45dp"
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/number_outline"
+        android:layout_alignLeft="@+id/number_outline"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
         android:layout_toStartOf="@+id/input_country_code"
         android:layout_toLeftOf="@+id/input_country_code"
-        app:srcCompat="@drawable/india" />
+        android:background="?android:attr/listDivider" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="184dp"
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="291dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/input_phone"
+        android:layout_above="@+id/editTextTextPersonName2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="54dp"
-        android:layout_marginRight="54dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="17dp"
         android:ems="10"
-        android:fontFamily="@font/exo_bold"
-        android:hint="EMAIL-ID"
-        android:inputType="textPersonName" />
+        android:fontFamily="@font/exo_2"
+        android:hint="NAME"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/exo_2"
+        android:text="TextView"
+        android:textSize="22sp"
+        tools:text="+91" />
+
 </RelativeLayout>
