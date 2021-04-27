@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,9 +12,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="211dp"
-        android:layout_marginBottom="29dp"
         android:cropToPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933"
         app:srcCompat="@drawable/people" />
 
     <TextView
@@ -26,39 +30,37 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginLeft="49dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
         android:fontFamily="@font/exo_bold"
         android:text="   Lend A Screen"
         android:textAllCaps="false"
         android:textColor="#454545"
         android:textSize="40dp"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="91dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="170dp"
+        android:layout_width="384dp"
+        android:layout_height="159dp"
         android:layout_below="@+id/get_started_title"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginRight="142dp"
         android:fontFamily="@font/exo_2"
         android:text="Welcome to a community of viewers of leading online streaming services, such as Netflix, Amazon Prime, Disney Hotstar+, etc."
         android:textColor="@color/grey"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="204dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_started_title"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/secondActivityBtn"
@@ -69,15 +71,16 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="41dp"
-        android:layout_marginLeft="41dp"
-        android:layout_marginTop="342dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
         android:fontFamily="@font/exo_bold"
         android:text="GET STARTED"
         app:backgroundTint="@color/green"
-        app:cornerRadius="15dp" />
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
