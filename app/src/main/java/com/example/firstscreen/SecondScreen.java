@@ -102,9 +102,6 @@ public class SecondScreen extends AppCompatActivity {
 
                     }
                 },10000);
-
-
-
             }
         };
 

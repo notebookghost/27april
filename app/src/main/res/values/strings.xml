@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">FirstScreen</string>
-    
-    
-
+    <string-array name="products_array">
+        <item>Netflix</item>
+        <item>Amazon Prime</item>
+        <item>Zee5</item>
+        <item>AltBalaji</item>
+    </string-array>
 </resources>
