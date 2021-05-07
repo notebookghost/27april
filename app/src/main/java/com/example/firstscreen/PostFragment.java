@@ -19,15 +19,14 @@ import java.util.List;
 public class PostFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
 private Spinner spinner;
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_post, container, false);
+    }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_post,container,false);
 
         spinner = view.findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.products_array, android.R.layout.simple_spinner_dropdown_item);
@@ -37,10 +36,6 @@ private Spinner spinner;
         spinner.setOnItemSelectedListener(this);
     }
 
-
-
-    }
-
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         Toast.makeText(getActivity(), adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
@@ -48,8 +43,5 @@ private Spinner spinner;
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-
     }
-
-
 }
