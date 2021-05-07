@@ -27,11 +27,11 @@
 
     <ImageButton
         android:id="@+id/imageButtonprime"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_width="149dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:padding="@android:dimen/dialog_min_width_major"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,8 +40,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonnetflix"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
+        android:layout_width="154dp"
+        android:layout_height="129dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
@@ -53,8 +53,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonhotstar"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
+        android:layout_width="153dp"
+        android:layout_height="117dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
@@ -66,11 +66,11 @@
 
     <ImageButton
         android:id="@+id/imageButtonalt"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
+        android:layout_width="140dp"
+        android:layout_height="133dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:padding="@android:dimen/dialog_min_width_major"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,11 +79,11 @@
 
     <ImageButton
         android:id="@+id/imageButtonspotify"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
+        android:layout_width="148dp"
+        android:layout_height="113dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:padding="@android:dimen/dialog_min_width_major"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,15 +92,15 @@
 
     <ImageButton
         android:id="@+id/imageButtonzee"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="144dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="340dp"
         android:padding="@android:dimen/dialog_min_width_major"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonhotstar"
-        app:srcCompat="@drawable/Zee5" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/zee" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
